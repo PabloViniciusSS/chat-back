@@ -1,73 +1,41 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  <p align="center">Back-end do chat
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Projeto
+
+Foi desenvolvido um backend para uma avaliação profissional, com o objetivo de criar um chat real-time, em nestJS framework do nodeJs, e utilizando o socktio, o cliente precisa fazer um login para se autenticar, sem essa autenticação não é possivel acessar a area de chat.
 
 ## Installation
 
-```bash
-$ npm install
-```
+
+yarn install
+
 
 ## Running the app
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
+yarn run start:dev
 
-# production mode
-$ npm run start:prod
-```
 
-## Test
+## Descrição do que foi realizado
 
-```bash
-# unit tests
-$ npm run test
+Foi feito um autenticação, por meio do nome do usuario e senha, apos isso, é feito a criação de um token que o front end vai poder utilizar para criação das urls com segurança e foi adicionado essa segurança em todo o backend, sem o login inicial não é possivel fazer uso das funcionalidades. Para fazer o chat foi utilizado o socktion, criando uma ligação simples de envio e recebimento de mensagem, do client e do server. No login utilizei um banco sqlite, simples so para realizar as conexoes com o banco e salvamente dos dados e utilizei o prisma ORM, para interliga o banco com o projeto.
+  
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+ ## Funcionalidades e rotas
+  
+  Todos os caminhos foram feitos no 'localhost:3000'
+  
+ <br> Para a criação do usuario a rota é: '/user' </br>
+ <br>  Para ser feito o login a rota é: '/login' </br>
+  <br> O chat fica no 'localhost:3000'.</br>
+  
+  ## Conclusão
+  
+  Tive bastante dificuldade com o desenvolvimento, mesmo entendendo cada parte do socktio, mostrou que preciso conhecer mais dessa funcionalidade, tambem tive um aprendizado muito grande com o nestJs, foi meu primeir projeto nele, antes, ja tinha estudado, mas, nao criado com ele, gero um interesse ainda maior em conhecer ele. 
+  No final o projeto nao saiu como eu queria, tive alguns problemas principalmente com o chat, fazendo que ele ficasse bem mais simples do que deveria, e a parte de login mais complexo.
+  
+  
+ 
