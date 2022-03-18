@@ -5,7 +5,7 @@
 
 ## Projeto
 
-Foi desenvolvido um backend para uma avaliação profissional, com o objetivo de criar um chat real-time, em nestJS framework do nodeJs, e utilizando o socktio, o cliente precisa fazer um login para se autenticar, sem essa autenticação não é possivel acessar a area de chat.
+Foi desenvolvido um backend para uma avaliação profissional, com o objetivo de criar um chat real-time, em nestJS framework do nodeJs, e utilizando o socktio, o cliente precisa fazer um login para se autenticar, sem essa autenticação não é possivel acessar a area de chat. Clique na pasta para ver o projeto completo
 
 ## Installation
 
