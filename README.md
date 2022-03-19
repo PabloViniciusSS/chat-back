@@ -31,6 +31,8 @@ Foi feito um autenticação, por meio do nome do usuario e senha, apos isso, é 
  <br> Para a criação do usuario a rota é: '/user' </br>
  <br>  Para ser feito o login a rota é: '/login' </br>
   <br> O chat fica no 'localhost:3000'.</br>
+  <br> Para enviar a mensagem ao servidor 'message-server'</br>
+  <br> Para o client ver essa mensagem 'message-client' </br>
   
   ## Conclusão
   
